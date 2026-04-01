@@ -30,19 +30,19 @@ The challenge:
 - Conducted correlation and distribution analysis
 
 # Key Code Highlights
-#### Group-wise median imputation for missing ratings
+### Group-wise median imputation for missing ratings
 df['Rating'] = df['Rating'].fillna(
     df.groupby(['Category','Content Rating'])['Rating'].transform('median')
 )
 
-#### Top categories by reviews
+### Top categories by reviews
 df.groupby(['Category'])['Reviews'].mean().reset_index().sort_values('Reviews', ascending=False)
 
-#### Correlation analysis
+### Correlation analysis
 plt.figure(figsize=(11,6))
 sns.heatmap(df.corr(), annot=True, vmin=-1, vmax=1, fmt='.2f', cmap='Spectral');
 
-#### Engagement relationship
+### Engagement relationship
 sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 
 # Visualization / Dashboard
