@@ -30,7 +30,62 @@ The challenge:
 - Conducted correlation and distribution analysis
 
 # Key Code Highlights
-### Group-wise median imputation for missing ratings
+#### Group-wise median imputation for missing ratings
 df['Rating'] = df['Rating'].fillna(
     df.groupby(['Category','Content Rating'])['Rating'].transform('median')
 )
+
+#### Top categories by reviews
+df.groupby(['Category'])['Reviews'].mean().reset_index().sort_values('Reviews', ascending=False)
+
+#### Correlation analysis
+plt.figure(figsize=(11,6))
+sns.heatmap(df.corr(), annot=True, vmin=-1, vmax=1, fmt='.2f', cmap='Spectral');
+
+#### Engagement relationship
+sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
+
+# Visualization / Dashboard
+- Distribution plots for installs, reviews, and ratings
+- Category-level performance comparisons
+- Correlation heatmaps and regression plots
+- Multivariate trend analysis (e.g., installs by category + pricing + size)
+
+# Key Insights
+- Top-performing categories:
+  → Game, Photography, Sports (with Communication and Others close behind)
+- Highest engagement segments:
+  → Teen and Everyone 10+ content ratings
+- Strong correlation:
+  → Reviews and Installs (high engagement drives visibility and growth)
+- Market structure:
+  → 92% of apps are free; paid apps represent a small but niche opportunity
+- Monetization signals:
+  → Apps with ads, in-app purchases, or editor’s choice status perform better
+- Low-performing categories:
+  → Medical, Finance, Lifestyle, Business, Books & Reference
+
+# Recommendations
+- Prioritize ad placements in:
+  → Game, Photography, Sports, Communication categories
+- Target audiences:
+  → Teen and Everyone 10+ segments
+- Focus on apps that:
+  → Support ads
+  → Include in-app purchases
+  → Have strong review volumes
+- Pricing strategy insights:
+  → Free apps dominate
+  → Paid apps under $20 perform best in select categories
+
+# Outcome / Impact
+This analysis enables:
+- Smarter ad targeting decisions
+- Improved ROI on campaign spend
+- Identification of high-growth app segments
+- Data-driven prioritization of advertising investments
+
+# Next Steps
+- Build a predictive model for app installs
+- Integrate time-series trend analysis
+- Develop an interactive Tableau dashboard for stakeholders
