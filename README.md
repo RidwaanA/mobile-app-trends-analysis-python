@@ -55,7 +55,9 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Distribution plots for installs, reviews, and ratings
 - 📌 Category-level performance comparisons
 - 📌 Correlation heatmaps and regression plots
+visualizations/Heat map_Numerical features2.png
 - 📌 Multivariate trend analysis (installs by category, pricing, and app size)
+visualizations/Line chart_Content rating installs.png
 
 **Tableau**
 - 📌 Stacked bar charts: Apps split by paid/free status across categories and content ratings — broken down further by ad support, in-app purchases, and editor's choice status
@@ -64,6 +66,7 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Pareto chart: Category installs — showing which categories drive the majority of total installs
 - 📌 Pareto chart: Content rating installs — showing which content ratings account for the bulk of install volume
 - 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+[Dasboard Overview](visualizations/Interactive dashboard2.png)
 
 ## Key Insights
 - Top-performing categories:
