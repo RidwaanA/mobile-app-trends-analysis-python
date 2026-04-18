@@ -71,7 +71,7 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Pareto chart: Category installs — showing which categories drive the majority of total installs
 - 📌 Pareto chart: Content rating installs — showing which content ratings account for the bulk of install volume
 
-[**Dasboard Overview**]
+[**Dashboard Overview**]
 <img width="1366" height="768" alt="Interactive dashboard2" src="https://github.com/user-attachments/assets/29680e00-9f52-4db7-ad2d-4c239f6d3fd5" />
 
 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
