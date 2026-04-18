@@ -18,9 +18,9 @@ The challenge:
 - Mix of free and paid apps across 15 categories
 
 ## Tools & Technologies
-- Python (Pandas, NumPy)
-- Data Visualization (Seaborn, Matplotlib)
-- Jupyter Notebook
+- **Python** (Pandas, NumPy, Seaborn, Matplotlib)
+- **Jupyter Notebook**
+- **Tableau**
 
 ## Data Processing / Methodology
 - Cleaned missing values in Rating and Reviews using group-wise median imputation
@@ -29,21 +29,26 @@ The challenge:
 - Engineered features (e.g., size and price bins for deeper insights)
 - Conducted correlation and distribution analysis
 
-# Key Code Highlights
-### Group-wise median imputation for missing ratings
+## Key Code Highlights
+```python
+// Group-wise median imputation for missing ratings
 df['Rating'] = df['Rating'].fillna(
     df.groupby(['Category','Content Rating'])['Rating'].transform('median')
 )
-
-### Top categories by reviews
+```
+```python
+// Top categories by reviews
 df.groupby(['Category'])['Reviews'].mean().reset_index().sort_values('Reviews', ascending=False)
-
-### Correlation analysis
+```
+```python
+// Correlation analysis
 plt.figure(figsize=(11,6))
 sns.heatmap(df.corr(), annot=True, vmin=-1, vmax=1, fmt='.2f', cmap='Spectral');
-
-### Engagement relationship
+```
+```python
+// Engagement relationship
 sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
+```
 
 ## Visualization / Dashboard
 **Python (Jupyter Notebook)**
@@ -60,13 +65,7 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Pareto chart: Content rating installs — showing which content ratings account for the bulk of install volume
 - 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
-# Visualization / Dashboard
-- Distribution plots for installs, reviews, and ratings
-- Category-level performance comparisons
-- Correlation heatmaps and regression plots
-- Multivariate trend analysis (e.g., installs by category + pricing + size)
-
-# Key Insights
+## Key Insights
 - Top-performing categories:
   → Game, Photography, Sports (with Communication and Others close behind)
 - Highest engagement segments:
@@ -80,27 +79,27 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - Low-performing categories:
   → Medical, Finance, Lifestyle, Business, Books & Reference
 
-# Recommendations
+## Recommendations
 - Prioritize ad placements in:
   → Game, Photography, Sports, Communication categories
 - Target audiences:
   → Teen and Everyone 10+ segments
 - Focus on apps that:
-  → Support ads
-  → Include in-app purchases
-  → Have strong review volumes
+  - → Support ads
+  - → Include in-app purchases
+  - → Have strong review volumes
 - Pricing strategy insights:
-  → Free apps dominate
-  → Paid apps under $20 perform best in select categories
+  - → Free apps dominate
+  - → Paid apps under $20 perform best in select categories
 
-# Outcome / Impact
+## Outcome / Impact
 This analysis enables:
-- Smarter ad targeting decisions
-- Improved ROI on campaign spend
-- Identification of high-growth app segments
-- Data-driven prioritization of advertising investments
+- ✅ Smarter ad targeting decisions
+- ✅ Improved ROI on campaign spend
+- ✅ Identification of high-growth app segments
+- ✅ Data-driven prioritization of advertising investments
 
-# Next Steps
+## Next Steps
 - Build a predictive model for app installs
 - Integrate time-series trend analysis
 - Develop an interactive Tableau dashboard for stakeholders
