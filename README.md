@@ -56,9 +56,10 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Category-level performance comparisons
 - 📌 Correlation heatmaps and regression plots
 <img width="841" height="433" alt="Heat map_Numerical features2" src="https://github.com/user-attachments/assets/cc580b25-28d2-49be-9b08-b9741235cc7b" />
+
 - 📌 Multivariate trend analysis (installs by category, pricing, and app size)
 <img width="391" height="315" alt="Line chart_Content rating installs" src="https://github.com/user-attachments/assets/09702dba-ba24-4c89-aaa4-d2846974e813" />
-
+---
 
 **Tableau**
 - 📌 Stacked bar charts: Apps split by paid/free status across categories and content ratings — broken down further by ad support, in-app purchases, and editor's choice status
@@ -70,7 +71,7 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 [Dasboard Overview]
 <img width="1366" height="768" alt="Interactive dashboard2" src="https://github.com/user-attachments/assets/29680e00-9f52-4db7-ad2d-4c239f6d3fd5" />
 
-- 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Key Insights
 - Top-performing categories:
