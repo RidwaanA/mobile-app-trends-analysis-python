@@ -59,15 +59,18 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Multivariate trend analysis (installs by category, pricing, and app size)
 <img width="391" height="315" alt="Line chart_Content rating installs" src="https://github.com/user-attachments/assets/09702dba-ba24-4c89-aaa4-d2846974e813" />
 
+
 **Tableau**
 - 📌 Stacked bar charts: Apps split by paid/free status across categories and content ratings — broken down further by ad support, in-app purchases, and editor's choice status
 - 📌 Bar chart: Average installs across app categories
 - 📌 Bar chart: Average installs across content ratings
 - 📌 Pareto chart: Category installs — showing which categories drive the majority of total installs
 - 📌 Pareto chart: Content rating installs — showing which content ratings account for the bulk of install volume
-- 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
 [Dasboard Overview]
 <img width="1366" height="768" alt="Interactive dashboard2" src="https://github.com/user-attachments/assets/29680e00-9f52-4db7-ad2d-4c239f6d3fd5" />
+
+- 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Key Insights
 - Top-performing categories:
