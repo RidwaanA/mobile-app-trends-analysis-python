@@ -55,9 +55,11 @@ sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
 - 📌 Distribution plots for installs, reviews, and ratings
 - 📌 Category-level performance comparisons
 - 📌 Correlation heatmaps and regression plots
+
 <img width="841" height="433" alt="Heat map_Numerical features2" src="https://github.com/user-attachments/assets/cc580b25-28d2-49be-9b08-b9741235cc7b" />
 
 - 📌 Multivariate trend analysis (installs by category, content rating, pricing, and app size)
+
 <img width="391" height="315" alt="Line chart_Content rating installs" src="https://github.com/user-attachments/assets/09702dba-ba24-4c89-aaa4-d2846974e813" />
 
 ---
