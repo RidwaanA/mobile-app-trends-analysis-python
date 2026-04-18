@@ -113,4 +113,3 @@ This analysis enables:
 ## Next Steps
 - Build a predictive model for app installs
 - Integrate time-series trend analysis
-- Develop an interactive Tableau dashboard for stakeholders
