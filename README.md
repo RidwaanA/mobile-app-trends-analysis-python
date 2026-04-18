@@ -1,28 +1,28 @@
 # 📱 Mobile Application Download Trends & Category Growth Analysis
 
-# Project Overview
+## Project Overview
 This project analyzes Google Play Store data to uncover trends in app installs, user engagement, and category performance.
 
 Using Python (Pandas, Seaborn, Matplotlib), the analysis identifies high-performing app segments and key drivers of popularity to support data-driven advertising strategies for a marketing agency.
 
-# Business Problem
+## Business Problem
 Zoom Ads aims to optimize ad placements by targeting app categories with the highest user engagement and growth potential.
 
 The challenge:
 ➡️ Identify which app categories and attributes maximize installs and user interaction.
 
-# Dataset
+## Dataset
 - ~4,200 mobile applications
 - 12 features including:
-  App, Category, Rating, Reviews, Installs, Price, Content Rating
+  `App`, `Category`, `Rating`, `Reviews`, `Installs`, `Price`, `Content Rating`
 - Mix of free and paid apps across 15 categories
 
-# Tools & Technologies
+## Tools & Technologies
 - Python (Pandas, NumPy)
 - Data Visualization (Seaborn, Matplotlib)
 - Jupyter Notebook
 
-# Data Processing / Methodology
+## Data Processing / Methodology
 - Cleaned missing values in Rating and Reviews using group-wise median imputation
 - Converted data types (e.g., Installs, Reviews → numeric)
 - Performed univariate, bivariate, and multivariate analysis
@@ -44,6 +44,21 @@ sns.heatmap(df.corr(), annot=True, vmin=-1, vmax=1, fmt='.2f', cmap='Spectral');
 
 ### Engagement relationship
 sns.lmplot(data=df, x='Installs', y='Reviews', ci=None)
+
+## Visualization / Dashboard
+**Python (Jupyter Notebook)**
+- 📌 Distribution plots for installs, reviews, and ratings
+- 📌 Category-level performance comparisons
+- 📌 Correlation heatmaps and regression plots
+- 📌 Multivariate trend analysis (installs by category, pricing, and app size)
+
+**Tableau**
+- 📌 Stacked bar charts: Apps split by paid/free status across categories and content ratings — broken down further by ad support, in-app purchases, and editor's choice status
+- 📌 Bar chart: Average installs across app categories
+- 📌 Bar chart: Average installs across content ratings
+- 📌 Pareto chart: Category installs — showing which categories drive the majority of total installs
+- 📌 Pareto chart: Content rating installs — showing which content ratings account for the bulk of install volume
+- 🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MobileApplicationDownloadTrendsCategoryGrowthAnalysis/AppsOverviewInstallationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 # Visualization / Dashboard
 - Distribution plots for installs, reviews, and ratings
